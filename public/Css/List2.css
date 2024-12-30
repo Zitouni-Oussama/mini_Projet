@@ -1,0 +1,194 @@
+.div-list {
+    padding: 20px;
+    background-color: #494949;
+    border-radius: 30px;
+    border: #292929 3px solid;
+    max-width: 1250px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.div-list h2 {
+    text-align: center;
+    color: #f3f3f3;
+    margin-bottom: 20px;
+}
+
+/* Transaction list styling */
+.div-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Transaction item (sticker style) */
+.div-list li {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.div-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Different colors for income and expense */
+.div-list li.income {
+    border-left: 5px solid #157e2e;
+    background-color: #e8f9e5;
+}
+
+.div-list li.expense {
+    border-left: 5px solid #993800;
+    background-color: #f8d7da;
+}
+
+/* Text styling for each transaction */
+.div-list p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Styling for the delete button */
+.div-list button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.div-list button:hover {
+    background-color: #c82333;
+}
+
+.div-list li button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    .div-list li {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .div-list button {
+        font-size: 12px;
+    }
+}
+
+/* Conteneur des filtres (dark mode) */
+.div-list .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #292929;
+    /* Couleur sombre pour le fond */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Ombre plus marquée pour le mode sombre */
+    border: 1px solid #494949;
+    /* Bordure plus sombre */
+}
+
+/* Label des filtres (dark mode) */
+.div-list .filters label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f3f3f3;
+    /* Texte clair pour contraster avec le fond sombre */
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Champs de saisie (input, select) (dark mode) */
+.div-list .filters input,
+.div-list .filters select {
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #494949;
+    /* Bordure assortie au mode sombre */
+    background-color: #494949;
+    /* Couleur de fond sombre */
+    color: #f3f3f3;
+    /* Texte clair */
+    transition: box-shadow 0.3s, border-color 0.3s;
+    width: 200px;
+}
+
+.div-list .filters input:focus,
+.div-list .filters select:focus {
+    border-color: goldenrod;
+    /* Bordure verte au focus */
+    box-shadow: 0 0 5px rgba(218, 165, 32,0.5);
+    /* Ombre verte subtile */
+}
+
+/* Placeholder style (dark mode) */
+.div-list .filters input::placeholder {
+    color: #bfbfbf;
+    /* Placeholder plus clair dans le mode sombre */
+    font-style: italic;
+}
+
+/* Style des filtres (groupes) */
+.div-list .filters div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Boutons de filtre (dark mode) */
+.div-list .filters button {
+    background-color: goldenrod;
+    /* Couleur verte pour le mode sombre */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.div-list .filters button:hover {
+    background-color: goldenrod;
+    /* Vert plus foncé au survol */
+}
+
+/* Responsive design pour les filtres (dark mode) */
+@media (max-width: 600px) {
+    .div-list .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .div-list .filters div {
+        width: 100%;
+    }
+
+    .div-list .filters input,
+    .div-list .filters select {
+        width: 100%;
+    }
+}

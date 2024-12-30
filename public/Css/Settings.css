@@ -1,0 +1,243 @@
+#great_div {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #494949;
+    border: #292929 3px solid;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+/* Conteneur principal */
+div.container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre principal */
+h2 {
+    font-size: 2.4rem;
+    color:#f8f9fa;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Paragraphe pour description ou instructions */
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Style des boutons */
+button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    color: #fff;
+    background-color: goldenrod;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #b18414;
+    transform: translateY(-2px);
+}
+
+/* Sélection de devise et input */
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid goldenrod;
+    background-color: #292929;
+    color: goldenrod;
+    transition: border-color 0.3s ease;
+}
+
+/* Section d'exportation de CSV */
+div.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Table des transactions importées */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: goldenrod;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+table th {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--table-row-hover-bg);
+}
+
+table tbody tr:hover {
+    background-color: var(--table-row-hover-bg);
+}
+
+/* Section de fichier CSV */
+input[type="file"] {
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+
+input[type="file"]:focus {
+    border-color: var(--primary-bg);
+}
+
+label {
+    font-size: 1.1rem;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+/* Ajout d'ombre douce aux champs de formulaire */
+select,
+input[type="file"] {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation pour les transitions */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Responsive Design */
+
+/* Pour les petits écrans (mobiles) */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    select,
+    input[type="file"] {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    table th,
+    table td {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    table {
+        margin-top: 20px;
+    }
+
+    div.button-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Pour les tablettes */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    select,
+    input[type="file"] {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    table th,
+    table td {
+        font-size: 1rem;
+        padding: 14px;
+    }
+}
+
+/* Pour les écrans plus larges (ordinateurs de bureau) */
+@media (min-width: 901px) {
+    .container {
+        padding: 40px;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+
+    select,
+    input[type="file"] {
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+
+    table th,
+    table td {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,180 @@
+.div-list {
+    padding: 20px;
+    background-color: #cecece;
+    border-radius: 30px;
+    border: #fff 3px solid;
+    max-width: 1250px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.div-list h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Transaction list styling */
+.div-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Transaction item (sticker style) */
+.div-list li {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.div-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Different colors for income and expense */
+.div-list li.income {
+    border-left: 5px solid #28a745;
+    background-color: #e8f9e5;
+}
+
+.div-list li.expense {
+    border-left: 5px solid #ff5e00;
+    background-color: #f8d7da;
+}
+
+/* Text styling for each transaction */
+.div-list p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Styling for the delete button */
+.div-list button {
+    background-color: rgb(165, 112, 15);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.div-list button:hover {
+    background-color: rgb(165, 122, 15);
+}
+
+.div-list li button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    .div-list li {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .div-list button {
+        font-size: 12px;
+    }
+}
+
+/* Container des filtres */
+.div-list .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Label pour les filtres */
+.div-list .filters label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Champs de saisie (input, select) */
+.div-list .filters input,
+.div-list .filters select {
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    width: 200px;
+}
+
+.div-list .filters input:focus,
+.div-list .filters select:focus {
+    border-color: goldenrod;
+    box-shadow: 0 0 5px rgba(218, 165, 32,0.5);
+}
+
+/* Placeholder style */
+.div-list .filters input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Style des filtres (groupes) */
+.div-list .filters div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Boutons de filtre (facultatif) */
+.div-list .filters button {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.div-list .filters button:hover {
+    background-color: goldenrod;
+}
+
+/* Responsive design pour les filtres */
+@media (max-width: 600px) {
+    .div-list .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .div-list .filters div {
+        width: 100%;
+    }
+
+    .div-list .filters input,
+    .div-list .filters select {
+        width: 100%;
+    }
+}

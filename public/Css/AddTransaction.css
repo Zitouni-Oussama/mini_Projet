@@ -1,0 +1,113 @@
+/* Spécifiez les styles pour .home-container-add uniquement */
+.home-container-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cfcfcf;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+    border: #fff 3px solid;
+    border-radius: 30px;
+}
+
+.home-container-add form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* max-width: 500px; */
+}
+
+.home-container-add h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.home-container-add input,
+.home-container-add select,
+.home-container-add textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Styles lors du focus sur les éléments de formulaire */
+.home-container-add input:focus,
+.home-container-add select:focus,
+.home-container-add textarea:focus {
+    border-color: goldenrod;
+    border-width: 2px;
+    outline: none;
+}
+
+.home-container-add div {
+    margin-bottom: 20px;
+    display: flex; /* Utilisez flex pour aligner horizontalement */
+    justify-content: flex-start; /* Aligner à gauche */
+    gap: 20px; /* Espacement entre les boutons radio */
+}
+
+.home-container-add label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    display: inline-flex; /* Permet de garder les éléments dans la même ligne */
+    align-items: center; /* Centrer le texte et l'input verticalement */
+}
+
+.home-container-add input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+/* Bouton de soumission */
+.home-container-add button {
+    background-color: goldenrod;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-container-add button:hover {
+    background-color: rgb(187, 139, 19);
+}
+
+/* Textearea des notes */
+.home-container-add textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Responsivité pour les écrans plus petits */
+@media (max-width: 600px) {
+    .home-container-add {
+        padding: 10px;
+    }
+
+    .home-container-add form {
+        width: 100%;
+    }
+
+    .home-container-add button {
+        font-size: 14px;
+    }
+
+    .home-container-add input,
+    .home-container-add select,
+    .home-container-add textarea {
+        font-size: 14px;
+    }
+}

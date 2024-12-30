@@ -1,0 +1,36 @@
+.footer {
+    background-color: goldenrod;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 20px;
+    /* Reduced padding to make it more compact */
+    margin-top: 20px;
+    /* Adds a small gap between content and footer */
+}
+
+/* Social media icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons .MuiIconButton-root {
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+}
+
+.social-icons .MuiIconButton-root:hover {
+    color: #3d3d3d;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    .social-icons .MuiIconButton-root {
+        font-size: 1.2rem;
+        /* Reduce icon size on smaller screens */
+    }
+
+    .footer {
+        padding: 10px 15px;
+        /* Slightly smaller padding on mobile */
+    }
+}

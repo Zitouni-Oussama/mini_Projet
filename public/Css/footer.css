@@ -1,0 +1,44 @@
+.footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;  /* Reduced padding to make it more compact */
+  margin-top: 20px; /* Adds a small gap between content and footer */
+}
+
+/* Links styles */
+.footer a { 
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px; /* Adds space between links */
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Social media icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons .MuiIconButton-root {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem; /* Adjust the icon size */
+}
+
+.social-icons .MuiIconButton-root:hover {
+  color: #ffcc00; /* Change color on hover (optional) */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  .social-icons .MuiIconButton-root {
+    font-size: 1.2rem; /* Reduce icon size on smaller screens */
+  }
+  
+  .footer {
+    padding: 10px 15px; /* Slightly smaller padding on mobile */
+  }
+}

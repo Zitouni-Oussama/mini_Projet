@@ -1,0 +1,72 @@
+/* Container principal */
+.reports-container {
+    padding: 30px;
+    background-color: #f4f7fa;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Titre principal */
+.reports-container h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Conteneur pour tous les graphiques */
+.charts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux graphiques par ligne */
+    gap: 30px; /* Espacement entre les graphiques */
+    justify-items: center;
+}
+
+/* Chaque élément graphique */
+.chart-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 500px; /* Limiter la taille maximale */
+}
+
+/* Titre des graphiques */
+.chart-item h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Effet de survol */
+.chart-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Pour les graphiques eux-mêmes (canvas) */
+.chart-item canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adapter le texte si nécessaire (petits écrans) */
+@media (max-width: 768px) {
+    .reports-container {
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    /* Lorsque l'écran est plus petit, afficher un graphique par ligne */
+    .charts-container {
+        grid-template-columns: 1fr; /* Une seule colonne pour les petits écrans */
+    }
+}
+ 

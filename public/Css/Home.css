@@ -1,0 +1,183 @@
+/* Home Container */
+body{
+    background-color: #a8a8a8;
+}
+.home-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #dfdfdf;
+    border: #fff 3px solid;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+/* Welcome Message */
+.welcome-message {
+    font-size: 2rem;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Balance Section */
+.balance-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.balance-box {
+    flex: 1 1 30%;
+    /* Make it flexible and responsive */
+    background: #fff;
+    /* White card style */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.balance-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.total-income {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#INCOME:hover{
+    box-shadow: 0px 4px 4px rgba(40, 167, 69,0.8);
+    background-color: #28a745;
+}
+#INCOME:hover p{
+    color: #ffffff;
+}
+
+.total-expenses {
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#EXPENSES:hover{
+    box-shadow: 0px 4px 4px rgba(220, 53, 69,0.5);
+    background-color: #dc3545;
+}
+
+#EXPENSES:hover p{
+    color: #fff;
+}
+
+.balance {
+    color: rgb(74, 144, 226);
+    /* Soft blue for balance */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#BALANCE:hover{
+    box-shadow: 0px 4px 4px rgba(74, 114, 226,0.5);
+    background-color: #4a90e2;
+}
+
+#BALANCE:hover p{
+    color: #fff;
+}
+
+/* Chart and Today's Info Section */
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Chart Section */
+.chart-section {
+    width: 60%;
+    /* Take up 60% of the row */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chart-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Daily Info Section */
+.daily-info {
+    width: 35%;
+    /* Take up 35% of the row */
+    margin-left: 20px;
+    /* Add some spacing between the chart and info boxes */
+}
+
+.daily-info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.daily-info-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.daily-info-box h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.daily-info-box p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+@media (max-width: 1000px) {
+    .daily-info {
+        width: 80%;
+        /* Make both sections full-width */
+        margin-left: 0;
+        /* Remove spacing on small screens */
+    }
+    .chart-section{
+        width: 90%;
+        margin: auto;
+    } 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chart-container {
+        flex-direction: column;
+    }
+
+    .chart-section,
+    .daily-info {
+        width: 100%;
+        /* Make both sections full-width */
+        margin-left: 0;
+        /* Remove spacing on small screens */
+    }
+    .chart-section{
+        width: 90%;
+    } 
+}

@@ -1,0 +1,98 @@
+/* Styles for main menu (desktop view) */
+img{
+  margin-top: 5px;
+}
+#app_bar{
+  background-color: black;
+}
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-menu li {
+  margin: 0 20px;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem; /* Default font size for desktop */
+}
+
+/* Mobile Navigation (for the Drawer) */
+.mobile-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: black; /* Black background for mobile menu */
+  height: 100%; /* Ensure it covers the full height */
+}
+
+.mobile-navigation li {
+  margin: 20px 0;
+}
+
+.mobile-navigation li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem; /* Default font size for mobile */
+  display: block;
+  padding: 10px 0; /* Padding for spacing between items */
+}
+
+.mobile-navigation li a:hover {
+  color: rgb(255, 228, 159); /* Change color on hover */
+}
+
+/* Active link style */
+.active {
+  color: goldenrod !important;
+  font-weight: bold !important;
+}
+
+/* Drawer styles */
+.MuiDrawer-paper {
+  background-color: black !important; /* Ensure the drawer background is black */
+  color: white !important; /* White text in the drawer */
+  height: 100%; /* Full height of the screen */
+}
+
+/* Hide drawer overflow */
+.MuiDrawer-root {
+  overflow: hidden;
+}
+
+/* Mobile-specific styles for small screens */
+@media (max-width: 800px) {
+  .MuiDrawer-paper {
+    width: 240px;
+  }
+
+  /* Adjusting font size for mobile */
+  .mobile-navigation li a {
+    font-size: 1.2rem; /* Slightly smaller font size on mobile */
+  }
+}
+
+/* Desktop-specific styles */
+@media (min-width: 800px) {
+  .navigation-menu li a {
+    font-size: 1.2rem; /* Slightly larger font size for desktop */
+  }
+}
+
+/* Responsive typography for AppBar */
+@media (max-width: 800px) {
+  .MuiTypography-root {
+    font-size: 1.5rem; /* Larger font size for titles on mobile */
+  }
+}
+
+@media (min-width: 800px) {
+  .MuiTypography-root {
+    font-size: 2rem; /* Larger font size for titles on desktop */
+  }
+}
